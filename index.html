@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Diet Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <symbol id="icon-weight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+            </symbol>
+            <symbol id="icon-height" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </symbol>
+            <symbol id="icon-age" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path><path d="M12 6v6l4 2"></path>
+            </symbol>
+            <symbol id="icon-goal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="M22 4 12 14.01l-3-3"></path>
+            </symbol>
+            <symbol id="icon-diet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path>
+            </symbol>
+            <symbol id="icon-bmi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+            </symbol>
+            <symbol id="icon-workout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15.23 6.27-2.94 2.94a1.5 1.5 0 0 0-2.12 2.12l2.94 2.94a1.5 1.5 0 0 0 2.12-2.12Z"></path><path d="M15.23 6.27 12 3 8.77 6.27a1.5 1.5 0 0 0-2.12 2.12L10 12l-3.35 3.35a1.5 1.5 0 0 0 2.12 2.12L12 14l3.23 3.23a1.5 1.5 0 0 0 2.12-2.12L14 12l3.35-3.35a1.5 1.5 0 0 0-2.12-2.12Z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="container">
+        <header>
+            <h1>7-Day Fitness Planner</h1>
+            <p class="subtitle">Your personalized week of health starts now.</p>
+            <img src="group-fitness.jpg" alt="A group of people in a fitness class" class="header-image">
+        </header>
+
+        <main>
+            <div id="initial-choice-container">
+                <button id="new-user-btn" class="submit-btn-style">Start a New Plan</button>
+                <button id="existing-user-btn" class="submit-btn-style">Find My Existing Plan</button>
+            </div>
+
+            <div id="existing-user-flow" class="hidden-step">
+                <p>Enter your email to retrieve your most recent plan.</p>
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="find-email" class="visually-hidden">Email</label>
+                        <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-goal"></use></svg></span>
+                        <input type="email" id="find-email" class="input-field" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <button id="find-plan-btn" class="submit-btn-style">Find My Plan</button>
+            </div>
+
+            <div id="new-user-flow" class="hidden-step">
+                <form id="fitness-form">
+                    <div id="step1">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="weight" class="visually-hidden">Weight (kg)</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-weight"></use></svg></span>
+                                <input type="number" id="weight" name="weight" class="input-field" placeholder="Weight (kg)" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="height" class="visually-hidden">Height (cm)</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-height"></use></svg></span>
+                                <input type="number" id="height" name="height" class="input-field" placeholder="Height (cm)" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="age" class="visually-hidden">Age</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-age"></use></svg></span>
+                                <input type="number" id="age" name="age" class="input-field" placeholder="Age" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="goal" class="visually-hidden">Select your goal</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-goal"></use></svg></span>
+                                <select id="goal" name="goal" class="input-field" required>
+                                    <option value="" disabled selected>Select your goal</option>
+                                    <option value="Weight Loss">Weight Loss</option>
+                                    <option value="Weight Gain">Weight Gain</option>
+                                    <option value="Stay Fit">Stay Fit</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="dietType" class="visually-hidden">Select diet type</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-diet"></use></svg></span>
+                                <select id="dietType" name="dietType" class="input-field" required>
+                                    <option value="" disabled selected>Select diet type</option>
+                                    <option value="Vegetarian">Vegetarian</option>
+                                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                                    <option value="Vegan">Vegan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" id="next-btn" class="submit-btn-style">Proceed to Next Step</button>
+                    </div>
+
+                    <div id="step2" class="hidden-step">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="name" class="visually-hidden">Name</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-age"></use></svg></span>
+                                <input type="text" id="name" name="name" class="input-field" placeholder="Name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="visually-hidden">Email</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-goal"></use></svg></span>
+                                <input type="email" id="email" name="email" class="input-field" placeholder="Email Address" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone" class="visually-hidden">Phone Number</label>
+                                <span class="icon"><svg width="20" height="20"><use xlink:href="#icon-diet"></use></svg></span>
+                                <input type="tel" id="phone" name="phone" class="input-field" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <button type="submit" id="submit-btn" class="submit-btn-style">Generate My 7-Day Plan</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="loader" class="loader"></div>
+            <div id="results" class="hidden"></div>
+        </main>
+    </div>
+
+    <template id="results-template">
+        <div class="result-card" id="bmi-card">
+            <h2><svg width="24" height="24"><use xlink:href="#icon-bmi"></use></svg> Your BMI</h2>
+            <p>Your calculated Body Mass Index is <strong class="bmi-value"></strong>.</p>
+        </div>
+        <div class="result-card" id="workout-card">
+            <h2><svg width="24" height="24"><use xlink:href="#icon-workout"></use></svg> 7-Day Workout Plan</h2>
+            <ul class="workout-list"></ul>
+        </div>
+        <div class="result-card" id="diet-card">
+            <h2><svg width="24" height="24"><use xlink:href="#icon-diet"></use></svg> 7-Day Diet Plan</h2>
+            <div class="tabs"></div>
+            <div class="tab-content"></div>
+        </div>
+        <button id="pdf-btn" class="submit-btn-style">Download as PDF</button>
+    </template>
+
+
+    <script>
+        // All JavaScript code remains the same
+        // DOM Elements
+        const form = document.getElementById('fitness-form');
+        const resultsDiv = document.getElementById('results');
+        const loader = document.getElementById('loader');
+        
+        // New User Flow Elements
+        const newUserFlow = document.getElementById('new-user-flow');
+        const step1 = document.getElementById('step1');
+        const step2 = document.getElementById('step2');
+        const nextBtn = document.getElementById('next-btn');
+        const submitBtn = document.getElementById('submit-btn');
+
+        // Existing User Flow Elements
+        const existingUserFlow = document.getElementById('existing-user-flow');
+        const findEmailInput = document.getElementById('find-email');
+        const findPlanBtn = document.getElementById('find-plan-btn');
+
+        // Initial Choice Elements
+        const initialChoiceContainer = document.getElementById('initial-choice-container');
+        const newUserBtn = document.getElementById('new-user-btn');
+        const existingUserBtn = document.getElementById('existing-user-btn');
+
+        // Global state variables
+        let fullPlanData = {};
+        let userInputData = {}; 
+
+        // --- Initial Choice Logic ---
+        newUserBtn.addEventListener('click', () => {
+            initialChoiceContainer.classList.add('hidden-step');
+            newUserFlow.classList.remove('hidden-step');
+        });
+
+        existingUserBtn.addEventListener('click', () => {
+            initialChoiceContainer.classList.add('hidden-step');
+            existingUserFlow.classList.remove('hidden-step');
+        });
+
+        // --- Existing User Logic ---
+        findPlanBtn.addEventListener('click', async () => {
+            const email = findEmailInput.value;
+            if (!email) {
+                alert('Please enter your email address.');
+                return;
+            }
+
+            loader.style.display = 'block';
+            findPlanBtn.disabled = true;
+
+            try {
+                const response = await fetch(`http://localhost:4000/api/get-plan?email=${encodeURIComponent(email)}`);
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Plan not found.');
+                }
+                
+                const data = await response.json();
+                
+                // Populate global state with retrieved data
+                userInputData = data;
+                fullPlanData = data.plan;
+
+                existingUserFlow.classList.add('hidden-step');
+                displayResults(fullPlanData);
+
+            } catch (error) {
+                alert(error.message);
+            } finally {
+                loader.style.display = 'none';
+                findPlanBtn.disabled = false;
+            }
+        });
+
+
+        // --- New User Logic ---
+        nextBtn.addEventListener('click', () => {
+            const weight = document.getElementById('weight').value;
+            const height = document.getElementById('height').value;
+            const age = document.getElementById('age').value;
+            const goal = document.getElementById('goal').value;
+            const dietType = document.getElementById('dietType').value;
+
+            if (weight && height && age && goal && dietType) {
+                step1.classList.add('hidden-step');
+                step2.classList.remove('hidden-step');
+            } else {
+                alert('Please fill out all fields before proceeding.');
+            }
+        });
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                weight: parseFloat(formData.get('weight')),
+                height: parseFloat(formData.get('height')),
+                age: parseInt(formData.get('age')),
+                goal: formData.get('goal'),
+                dietType: formData.get('dietType')
+            };
+            
+            userInputData = data;
+
+            newUserFlow.classList.add('hidden-step');
+            resultsDiv.classList.add('hidden');
+            resultsDiv.innerHTML = '';
+            loader.style.display = 'block';
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Generating...';
+
+            try {
+                const response = await fetch('http://localhost:4000/api/generate-plan', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                
+                fullPlanData = await response.json();
+                displayResults(fullPlanData);
+
+            } catch (error) {
+                console.error("Error:", error);
+                resultsDiv.innerHTML = `<div class="result-card"><p style="color: #d93025;">Failed to generate plan. Is the server running?</p></div>`;
+            } finally {
+                loader.style.display = 'none';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Generate My 7-Day Plan';
+            }
+        });
+
+        // --- Shared Functions ---
+        function displayResults(data) {
+            resultsDiv.innerHTML = ''; // Clear previous results just in case
+            const template = document.getElementById('results-template');
+            const clone = template.content.cloneNode(true);
+
+            clone.querySelector('.bmi-value').textContent = data.bmi.toFixed(2);
+
+            const workoutList = clone.querySelector('.workout-list');
+            data.workoutPlan.forEach(day => {
+                const li = document.createElement('li');
+                li.textContent = day;
+                workoutList.appendChild(li);
+            });
+
+            const tabsContainer = clone.querySelector('.tabs');
+            const tabContentContainer = clone.querySelector('.tab-content');
+
+            data.dietPlan.forEach((day, index) => {
+                const tabButton = document.createElement('button');
+                tabButton.className = 'tab-btn';
+                tabButton.textContent = day.day;
+                tabButton.dataset.day = index;
+                if (index === 0) tabButton.classList.add('active');
+                tabsContainer.appendChild(tabButton);
+
+                const tabPane = document.createElement('div');
+                tabPane.className = 'tab-pane';
+                tabPane.dataset.day = index;
+                if (index === 0) tabPane.classList.add('active');
+                
+                let mealListHTML = '<ul>';
+                for (const mealKey in day) {
+                    if (mealKey !== 'day') {
+                        const formattedMealName = mealKey.replace(/([A-Z])/g, ' $1').trim();
+                        mealListHTML += `<li><strong>${formattedMealName}:</strong> ${day[mealKey]}</li>`;
+                    }
+                }
+                mealListHTML += '</ul>';
+                tabPane.innerHTML = mealListHTML;
+
+                tabContentContainer.appendChild(tabPane);
+            });
+            
+            tabsContainer.addEventListener('click', handleTabClick);
+            clone.querySelector('#pdf-btn').addEventListener('click', downloadPDF);
+
+            resultsDiv.appendChild(clone);
+            resultsDiv.classList.remove('hidden');
+        }
+        
+        function handleTabClick(e) {
+            if (e.target.matches('.tab-btn')) {
+                const dayIndex = e.target.dataset.day;
+                e.currentTarget.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                const content = e.currentTarget.nextElementSibling;
+                content.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+                content.querySelector(`.tab-pane[data-day="${dayIndex}"]`).classList.add('active');
+            }
+        }
+        
+        async function downloadPDF() {
+            if (!fullPlanData.bmi || !userInputData.name) {
+                alert("Please generate or find a plan first!");
+                return;
+            }
+
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF('p', 'mm', 'a4');
+            let y = 20;
+            const pageHeight = pdf.internal.pageSize.getHeight();
+            const margin = 15;
+            const defaultFontSize = 12;
+            const titleFontSize = 18;
+            const lineHeight = 7;
+
+            const checkPageBreak = (requiredHeight = lineHeight) => {
+                if (y + requiredHeight > pageHeight - margin) {
+                    pdf.addPage();
+                    y = margin;
+                }
+            };
+            
+            pdf.setFontSize(titleFontSize);
+            pdf.setFont("helvetica", "bold");
+            pdf.text("Your 7-Day Fitness Plan", pdf.internal.pageSize.getWidth() / 2, y, { align: 'center' });
+            y += lineHeight * 2;
+
+            pdf.setFontSize(14);
+            pdf.setFont("helvetica", "bold");
+            pdf.text("Your Details", margin, y);
+            y += lineHeight;
+
+            pdf.setFontSize(defaultFontSize);
+            pdf.setFont("helvetica", "normal");
+            pdf.text(`Name: ${userInputData.name}`, margin, y);
+            y += lineHeight;
+            pdf.text(`Email: ${userInputData.email}`, margin, y);
+            y += lineHeight;
+            pdf.text(`Phone: ${userInputData.phone}`, margin, y);
+            y += lineHeight;
+            pdf.text(`Goal: ${userInputData.goal}`, margin, y);
+            y += lineHeight * 2;
+            
+            checkPageBreak(lineHeight * 2);
+            pdf.setFontSize(14);
+            pdf.setFont("helvetica", "bold");
+            pdf.text("Your BMI", margin, y);
+            y += lineHeight;
+
+            pdf.setFontSize(defaultFontSize);
+            pdf.setFont("helvetica", "normal");
+            pdf.text(`Based on a weight of ${userInputData.weight}kg and height of ${userInputData.height}cm, your BMI is ${fullPlanData.bmi.toFixed(2)}.`, margin, y, { maxWidth: 180 });
+            y += lineHeight * 2;
+
+            checkPageBreak(lineHeight * 2);
+            pdf.setFontSize(14);
+            pdf.setFont("helvetica", "bold");
+            pdf.text("7-Day Workout Plan", margin, y);
+            y += lineHeight;
+
+            pdf.setFontSize(defaultFontSize);
+            pdf.setFont("helvetica", "normal");
+            fullPlanData.workoutPlan.forEach(day => {
+                checkPageBreak();
+                pdf.text(`• ${day}`, margin, y, { maxWidth: 180 });
+                y += lineHeight;
+            });
+            y += lineHeight;
+
+            checkPageBreak(lineHeight * 2);
+            pdf.setFontSize(14);
+            pdf.setFont("helvetica", "bold");
+            pdf.text("7-Day Diet Plan", margin, y);
+            y += lineHeight;
+
+            fullPlanData.dietPlan.forEach(day => {
+                const requiredSpace = Object.keys(day).length * lineHeight + lineHeight;
+                checkPageBreak(requiredSpace); 
+                
+                pdf.setFontSize(defaultFontSize);
+                pdf.setFont("helvetica", "bold");
+                pdf.text(day.day, margin, y);
+                y += lineHeight;
+
+                pdf.setFont("helvetica", "normal");
+
+                for (const mealKey in day) {
+                    if (mealKey !== 'day') {
+                        checkPageBreak();
+                        const formattedMealName = mealKey.replace(/([A-Z])/g, ' $1').trim();
+                        pdf.text(`- ${formattedMealName}: ${day[mealKey]}`, margin + 5, y, { maxWidth: 170 });
+                        y += lineHeight * 1.5; 
+                    }
+                }
+                y += lineHeight * 0.5; 
+            });
+
+            pdf.save(`${userInputData.name}-Fitness-Plan.pdf`);
+        }
+    </script>
+</body>
+</html>

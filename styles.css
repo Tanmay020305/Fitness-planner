@@ -1,0 +1,271 @@
+:root {
+    --primary-gradient: linear-gradient(45deg, #007BFF, #00C6FF);
+    --primary-color: #007BFF;
+    --body-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --text-color: #1a1a2e;
+    --text-secondary-color: #16213e;
+    --border-color: rgba(255, 255, 255, 0.25);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    color: var(--text-color);
+    background: var(--body-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px 0 var(--shadow-color);
+    padding: 3rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    margin-bottom: 1.5rem; /* Adjusted margin */
+    color: var(--text-secondary-color);
+}
+
+/* ## NEW STYLES FOR HEADER IMAGE ## */
+.header-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+select.input-field {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23007aff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.input-field:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15);
+}
+
+.input-field:focus ~ .icon {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.submit-btn-style {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn-style:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+    filter: brightness(1.1);
+}
+
+.submit-btn-style:disabled {
+    background: #a0c7f0;
+    cursor: not-allowed;
+    transform: none;
+    filter: none;
+    box-shadow: none;
+}
+
+.hidden-step {
+    display: none;
+}
+
+#initial-choice-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Centered and removed top margin */
+}
+
+#results {
+    margin-top: 2rem;
+    text-align: left;
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+#results.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.result-card h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.result-card ul {
+    padding-left: 20px;
+    margin: 0;
+    color: var(--text-secondary-color);
+}
+
+.result-card li {
+    padding: 0.25rem 0;
+}
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 2rem auto 0;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tab-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary-gradient);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.tab-pane {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane ul { list-style: none; padding-left: 0; }
+.tab-pane li { padding: 0.5rem 0; border-bottom: 1px solid var(--border-color); }
+.tab-pane li:last-child { border-bottom: none; }
+.tab-pane strong { color: var(--text-color); }
+
+@media (max-width: 768px) {
+    body { padding: 1rem; }
+    .container { padding: 1.5rem; }
+    h1 { font-size: 2.2rem; }
+    .header-image { height: 180px; }
+}

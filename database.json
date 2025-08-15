@@ -1,0 +1,598 @@
+[
+  {
+    "id": "1755239486867",
+    "name": "Tanmay",
+    "email": "Tanmay@gmail.com",
+    "phone": "1234587690",
+    "weight": 50,
+    "height": 175,
+    "age": 20,
+    "goal": "Muscle Gain",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T06:31:26.867Z",
+    "plan": {
+      "bmi": 16.3265306122449,
+      "workoutPlan": [
+        "Day 1: Chest & Triceps (bench press, dumbbell flys, dips)",
+        "Day 2: Back & Biceps (pull-ups, bent-over rows, bicep curls)",
+        "Day 3: Legs & Core (squats, deadlifts, leg press, planks)",
+        "Day 4: Rest",
+        "Day 5: Shoulders (overhead press, lateral raises)",
+        "Day 6: Full Body Compound Lifts",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Day 1",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 2",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 3",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 4",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 5",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 6",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 7",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755239523076",
+    "name": "nikhil",
+    "email": "nikhil@gmail.com",
+    "phone": "1234587609",
+    "weight": 50,
+    "height": 175,
+    "age": 20,
+    "goal": "Muscle Gain",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T06:32:03.076Z",
+    "plan": {
+      "bmi": 16.3265306122449,
+      "workoutPlan": [
+        "Day 1: Chest & Triceps (bench press, dumbbell flys, dips)",
+        "Day 2: Back & Biceps (pull-ups, bent-over rows, bicep curls)",
+        "Day 3: Legs & Core (squats, deadlifts, leg press, planks)",
+        "Day 4: Rest",
+        "Day 5: Shoulders (overhead press, lateral raises)",
+        "Day 6: Full Body Compound Lifts",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Day 1",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 2",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 3",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 4",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 5",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 6",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        },
+        {
+          "day": "Day 7",
+          "Breakfast": "1 cup oatmeal with water, 5 scrambled egg whites & 1 whole egg, and a handful of almonds (25g).",
+          "Lunch": "200g grilled chicken breast, 1 cup of brown rice, and 2 cups of mixed green vegetables.",
+          "Afternoon Snack": "1.5 cups of Greek yogurt mixed with 1 scoop of whey protein and 1/2 cup of berries.",
+          "Dinner": "200g lean steak or salmon fillet, a large green salad with light vinaigrette, and 1/2 cup of cottage cheese."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755240427253",
+    "name": "nikhil",
+    "email": "nikhil@gmail.com",
+    "phone": "1234587609",
+    "weight": 60,
+    "height": 175,
+    "age": 20,
+    "goal": "Weight Gain",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T06:47:07.253Z",
+    "plan": {
+      "bmi": 19.591836734693878,
+      "workoutPlan": [
+        "Day 1: Legs & Core (Barbell Squats: 4x8, Romanian Deadlifts: 3x10, Leg Press: 3x12, Hanging Leg Raises: 3x15)",
+        "Day 2: Chest & Triceps (Bench Press: 4x8, Incline Dumbbell Press: 3x10, Dips: 3x to failure, Tricep Pushdowns: 3x12)",
+        "Day 3: Back & Biceps (Deadlifts: 4x6, Pull-Ups: 3x to failure, Bent-Over Rows: 3x8, Barbell Curls: 3x10)",
+        "Day 4: Active Recovery (Light walk, stretching, or yoga)",
+        "Day 5: Shoulders (Overhead Press: 4x8, Lateral Raises: 3x15, Face Pulls: 3x15)",
+        "Day 6: Full Body (Focus on compound movements you enjoy)",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Monday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Tuesday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Wednesday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Thursday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Friday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Saturday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Sunday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755240672546",
+    "name": "nikhil",
+    "email": "nikhil@gmail.com",
+    "phone": "1234587609",
+    "weight": 60,
+    "height": 175,
+    "age": 20,
+    "goal": "Stay Fit",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T06:51:12.546Z",
+    "plan": {
+      "bmi": 19.591836734693878,
+      "workoutPlan": [
+        "Day 1: Full-body strength training",
+        "Day 2: 30 min of moderate cardio",
+        "Day 3: Full-body strength training",
+        "Day 4: Active Recovery (stretching or a long walk)",
+        "Day 5: 30 min of HIIT or a sport you enjoy",
+        "Day 6: Rest",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Monday",
+          "Breakfast": "Scrambled eggs",
+          "Lunch": "Grilled chicken salad",
+          "Dinner": "Salmon with asparagus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755241020511",
+    "name": "nikhil",
+    "email": "nikhil@gmail.com",
+    "phone": "1234587609",
+    "weight": 60,
+    "height": 175,
+    "age": 20,
+    "goal": "Stay Fit",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T06:57:00.511Z",
+    "plan": {
+      "bmi": 19.591836734693878,
+      "workoutPlan": [
+        "Day 1: Full-body strength training",
+        "Day 2: 30 min of moderate cardio",
+        "Day 3: Full-body strength training",
+        "Day 4: Active Recovery (stretching or a long walk)",
+        "Day 5: 30 min of HIIT or a sport you enjoy",
+        "Day 6: Rest",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Monday",
+          "Breakfast": "Scrambled eggs",
+          "Lunch": "Grilled chicken salad",
+          "Dinner": "Salmon with asparagus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755241197009",
+    "name": "nikhil",
+    "email": "nikhil@gmail.com",
+    "phone": "1234587609",
+    "weight": 60,
+    "height": 175,
+    "age": 20,
+    "goal": "Stay Fit",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T06:59:57.009Z",
+    "plan": {
+      "bmi": 19.591836734693878,
+      "workoutPlan": [
+        "Day 1: Full-body strength training",
+        "Day 2: 30 min of moderate cardio",
+        "Day 3: Full-body strength training",
+        "Day 4: Active Recovery (stretching or a long walk)",
+        "Day 5: 30 min of HIIT or a sport you enjoy",
+        "Day 6: Rest",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Day 1",
+          "Breakfast": "Scrambled eggs (2) with spinach",
+          "Lunch": "Grilled chicken salad with mixed greens",
+          "Dinner": "Baked salmon with steamed asparagus"
+        },
+        {
+          "day": "Day 2",
+          "Breakfast": "Greek yogurt with berries",
+          "Lunch": "Tuna salad sandwich on whole wheat bread",
+          "Dinner": "Lean steak with a side of sweet potato"
+        },
+        {
+          "day": "Day 3",
+          "Breakfast": "Oatmeal with a scoop of protein powder",
+          "Lunch": "Leftover steak and sweet potato",
+          "Dinner": "Chicken and vegetable stir-fry"
+        },
+        {
+          "day": "Day 4",
+          "Breakfast": "Protein smoothie",
+          "Lunch": "Chicken wrap with lettuce and tomato",
+          "Dinner": "Pork chops with apple sauce and green beans"
+        },
+        {
+          "day": "Day 5",
+          "Breakfast": "Avocado toast with a boiled egg",
+          "Lunch": "Shrimp and avocado salad",
+          "Dinner": "Fish tacos with a cabbage slaw"
+        },
+        {
+          "day": "Day 6",
+          "Breakfast": "Turkey bacon (2 slices) and an egg",
+          "Lunch": "Lean beef burger without the bun",
+          "Dinner": "Roast chicken with a medley of roasted vegetables"
+        },
+        {
+          "day": "Day 7",
+          "Breakfast": "Whole wheat pancakes with fruit",
+          "Lunch": "Leftover roast chicken",
+          "Dinner": "Spaghetti with a lean meat bolognese sauce"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755241207870",
+    "name": "nikhil",
+    "email": "nikhil@gmail.com",
+    "phone": "1234587609",
+    "weight": 60,
+    "height": 175,
+    "age": 20,
+    "goal": "Stay Fit",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T07:00:07.870Z",
+    "plan": {
+      "bmi": 19.591836734693878,
+      "workoutPlan": [
+        "Day 1: Full-body strength training",
+        "Day 2: 30 min of moderate cardio",
+        "Day 3: Full-body strength training",
+        "Day 4: Active Recovery (stretching or a long walk)",
+        "Day 5: 30 min of HIIT or a sport you enjoy",
+        "Day 6: Rest",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Day 1",
+          "Breakfast": "Scrambled eggs (2) with spinach",
+          "Lunch": "Grilled chicken salad with mixed greens",
+          "Dinner": "Baked salmon with steamed asparagus"
+        },
+        {
+          "day": "Day 2",
+          "Breakfast": "Greek yogurt with berries",
+          "Lunch": "Tuna salad sandwich on whole wheat bread",
+          "Dinner": "Lean steak with a side of sweet potato"
+        },
+        {
+          "day": "Day 3",
+          "Breakfast": "Oatmeal with a scoop of protein powder",
+          "Lunch": "Leftover steak and sweet potato",
+          "Dinner": "Chicken and vegetable stir-fry"
+        },
+        {
+          "day": "Day 4",
+          "Breakfast": "Protein smoothie",
+          "Lunch": "Chicken wrap with lettuce and tomato",
+          "Dinner": "Pork chops with apple sauce and green beans"
+        },
+        {
+          "day": "Day 5",
+          "Breakfast": "Avocado toast with a boiled egg",
+          "Lunch": "Shrimp and avocado salad",
+          "Dinner": "Fish tacos with a cabbage slaw"
+        },
+        {
+          "day": "Day 6",
+          "Breakfast": "Turkey bacon (2 slices) and an egg",
+          "Lunch": "Lean beef burger without the bun",
+          "Dinner": "Roast chicken with a medley of roasted vegetables"
+        },
+        {
+          "day": "Day 7",
+          "Breakfast": "Whole wheat pancakes with fruit",
+          "Lunch": "Leftover roast chicken",
+          "Dinner": "Spaghetti with a lean meat bolognese sauce"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755241249462",
+    "name": "Tanmay",
+    "email": "Tanmay@gmail.com",
+    "phone": "1234587690",
+    "weight": 80,
+    "height": 175,
+    "age": 20,
+    "goal": "Weight Loss",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T07:00:49.462Z",
+    "plan": {
+      "bmi": 26.122448979591837,
+      "workoutPlan": [
+        "Day 1: 45 min of moderate cardio (jogging, cycling)",
+        "Day 2: Full-body strength training (squats, push-ups, rows)",
+        "Day 3: 30 min of High-Intensity Interval Training (HIIT)",
+        "Day 4: Active Recovery (brisk walking or yoga)",
+        "Day 5: Full-body strength training",
+        "Day 6: 60 min of low-intensity cardio (swimming, incline walking)",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Day 1",
+          "Breakfast": "Scrambled eggs (2) with spinach",
+          "Lunch": "Grilled chicken salad with mixed greens",
+          "Dinner": "Baked salmon with steamed asparagus"
+        },
+        {
+          "day": "Day 2",
+          "Breakfast": "Greek yogurt with berries",
+          "Lunch": "Tuna salad sandwich on whole wheat bread",
+          "Dinner": "Lean steak with a side of sweet potato"
+        },
+        {
+          "day": "Day 3",
+          "Breakfast": "Oatmeal with a scoop of protein powder",
+          "Lunch": "Leftover steak and sweet potato",
+          "Dinner": "Chicken and vegetable stir-fry"
+        },
+        {
+          "day": "Day 4",
+          "Breakfast": "Protein smoothie",
+          "Lunch": "Chicken wrap with lettuce and tomato",
+          "Dinner": "Pork chops with apple sauce and green beans"
+        },
+        {
+          "day": "Day 5",
+          "Breakfast": "Avocado toast with a boiled egg",
+          "Lunch": "Shrimp and avocado salad",
+          "Dinner": "Fish tacos with a cabbage slaw"
+        },
+        {
+          "day": "Day 6",
+          "Breakfast": "Turkey bacon (2 slices) and an egg",
+          "Lunch": "Lean beef burger without the bun",
+          "Dinner": "Roast chicken with a medley of roasted vegetables"
+        },
+        {
+          "day": "Day 7",
+          "Breakfast": "Whole wheat pancakes with fruit",
+          "Lunch": "Leftover roast chicken",
+          "Dinner": "Spaghetti with a lean meat bolognese sauce"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1755241322137",
+    "name": "Tanmay",
+    "email": "Tanmay@gmail.com",
+    "phone": "1234587609",
+    "weight": 50,
+    "height": 177,
+    "age": 20,
+    "goal": "Weight Gain",
+    "dietType": "Non-Vegetarian",
+    "submittedAt": "2025-08-15T07:02:02.137Z",
+    "plan": {
+      "bmi": 15.959653994701394,
+      "workoutPlan": [
+        "Day 1: Legs & Core (Barbell Squats: 4x8, Romanian Deadlifts: 3x10, Leg Press: 3x12, Hanging Leg Raises: 3x15)",
+        "Day 2: Chest & Triceps (Bench Press: 4x8, Incline Dumbbell Press: 3x10, Dips: 3x to failure, Tricep Pushdowns: 3x12)",
+        "Day 3: Back & Biceps (Deadlifts: 4x6, Pull-Ups: 3x to failure, Bent-Over Rows: 3x8, Barbell Curls: 3x10)",
+        "Day 4: Active Recovery (Light walk, stretching, or yoga)",
+        "Day 5: Shoulders (Overhead Press: 4x8, Lateral Raises: 3x15, Face Pulls: 3x15)",
+        "Day 6: Full Body (Focus on compound movements you enjoy)",
+        "Day 7: Rest"
+      ],
+      "dietPlan": [
+        {
+          "day": "Monday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Tuesday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Wednesday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Thursday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Friday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Saturday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        },
+        {
+          "day": "Sunday",
+          "Breakfast": "4 whole eggs scrambled, 2 slices of whole wheat toast with 1 tbsp of butter, 1 glass of whole milk.",
+          "Morning Snack": "1 scoop of whey protein with 250ml of whole milk, 1 banana.",
+          "Lunch": "200g grilled chicken breast, 1.5 cups of white rice, 1 cup of steamed broccoli.",
+          "Evening Snack": "1 large handful of almonds (30g), 1 apple.",
+          "Dinner": "150g salmon fillet, 1 large sweet potato, a large portion of green salad with olive oil dressing.",
+          "Late Snack": "1 cup of Greek yogurt with 1 tbsp of honey."
+        }
+      ]
+    }
+  }
+]
