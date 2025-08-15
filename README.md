@@ -124,6 +124,9 @@ The Fitness \& Diet Planner is designed to help users kickstart their health jou
 
 \
 Screenshots
-<img src="group-fitness.jpg" >
+
+
+\<img src="group-fitness.jpg" \>
+\<img src="fitness-planner-homepage.jpg" \>
 
 
