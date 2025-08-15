@@ -124,4 +124,3 @@ The Fitness \& Diet Planner is designed to help users kickstart their health jou
 
 \<img src="group-fitness.jpg" \>
 \<img src="pic1.jpg" \>
-
