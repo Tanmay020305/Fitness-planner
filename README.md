@@ -122,13 +122,8 @@ The Fitness \& Diet Planner is designed to help users kickstart their health jou
 
 
 
-\## Screenshots
+\
+Screenshots
+<img src="group-fitness.jpg" >
 
-
-
-\\<img src="\[https://i.imgur.com/G5385lH.jpg](https://www.google.com/search?q=https://i.imgur.com/G5385lH.jpg)" alt="A group of people doing various exercises in a gym."\\>
-
-
-
-\\<img src="\[https://i.imgur.com/gK9pA70.jpg](https://www.google.com/search?q=https://i.imgur.com/gK9pA70.jpg)" alt="A man stretching in a gym with a water bottle on the floor."\\>
 
