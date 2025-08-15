@@ -120,13 +120,8 @@ The Fitness \& Diet Planner is designed to help users kickstart their health jou
 
 5\.  Open your browser and navigate to `http://localhost:4000` to view the application.
 
-
-
-\
-Screenshots
-
+## Screenshots
 
 \<img src="group-fitness.jpg" \>
-\<img src="fitness-planner-homepage.jpg" \>
-
+\<img src="pic1.jpg" \>
 
